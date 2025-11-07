@@ -1,0 +1,15 @@
+<div class="dashboard-layout">
+
+  <!-- Основная часть -->
+  <main class="dashboard-content">
+    <h2 class="section-title">🎞️ Popular Movies</h2>
+    <div class="movies-grid">
+      <div class="movies-grid">
+        <app-movie-card
+          *ngFor="let movie of movies"
+          [movie]="movie"
+        ></app-movie-card>
+      </div>
+    </div>
+  </main>
+</div>
