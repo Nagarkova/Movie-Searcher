@@ -1,15 +1,19 @@
 <div class="dashboard-layout">
-
   <!-- Основная часть -->
   <main class="dashboard-content">
     <h2 class="section-title">🎞️ Popular Movies</h2>
-    <div class="movies-grid">
-      <div class="movies-grid">
-        <app-movie-card
-          *ngFor="let movie of movies"
-          [movie]="movie"
-        ></app-movie-card>
-      </div>
+    <div *ngIf="isLoading" class="spinner-container">
+      <div class="spinner"></div>
+      <div>Загрузка фильмов...</div>
+    </div>
+    <div *ngIf="error && !isLoading" class="error-message">
+      {{ error }}
+    </div>
+    <div *ngIf="!isLoading && !error" class="movies-grid">
+      <app-movie-card
+        *ngFor="let movie of movies"
+        [movie]="movie"
+      ></app-movie-card>
     </div>
   </main>
 </div>

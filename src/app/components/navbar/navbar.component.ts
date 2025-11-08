@@ -3,7 +3,6 @@ import { FormsModule } from '@angular/forms';
 import { TuiAvatar } from '@taiga-ui/kit';
 import { TuiTextfield } from '@taiga-ui/core';
 
-
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -14,4 +13,3 @@ import { TuiTextfield } from '@taiga-ui/core';
 export class NavbarComponent {
   value = '';
 }
-
