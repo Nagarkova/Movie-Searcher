@@ -1,4 +1,4 @@
-# MyFirstAwesomeAngularApp
+# Movie-Searcher
 
 This is a movie search application built with Angular. It uses the public API from The Movie Database (TMDb) to search and display movie information.
 
@@ -25,11 +25,11 @@ This is a movie search application built with Angular. It uses the public API fr
 
 1. Build the Docker image:
    ```bash
-   docker build -t my-angular-app .
+   docker build -t movie-searcher .
    ```
 2. Run the container:
    ```bash
-   docker run -p 8080:80 my-angular-app
+   docker run -p 8080:80 movie-searcher
    ```
 3. Open your browser and go to [http://localhost:8080](http://localhost:8080)
 
