@@ -1,59 +1,57 @@
 # MyFirstAwesomeAngularApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+This is a movie search application built with Angular. It uses the public API from The Movie Database (TMDb) to search and display movie information.
 
-## Development server
+## Features
+- Search for movies by title
+- View movie details (poster, year, runtime, etc.)
+- Modern UI powered by Taiga UI
 
-To start a local development server, run:
+## How to Run
 
+### 1. Locally (Development)
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm start
+   ```
+3. Open your browser and go to [http://localhost:4200](http://localhost:4200)
+
+### 2. In Docker
+
+1. Build the Docker image:
+   ```bash
+   docker build -t my-angular-app .
+   ```
+2. Run the container:
+   ```bash
+   docker run -p 8080:80 my-angular-app
+   ```
+3. Open your browser and go to [http://localhost:8080](http://localhost:8080)
+
+## Testing
+
+To run unit tests:
 ```bash
-ng serve
+npm test
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Environment Variables
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+To use the TMDb API, create a `.env` file (if needed) and add your API key:
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+TMDB_API_KEY=your_key_here
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular CLI Documentation](https://angular.dev/tools/cli)
+- [TMDb API Documentation](https://developer.themoviedb.org/docs)
+
+---
+
+The application is ready to run and use for movie searching!

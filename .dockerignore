@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+dist
+.git
+.gitignore
+.env
+coverage
+public
+src/**/*.spec.ts
+src/**/*.test.ts
+
