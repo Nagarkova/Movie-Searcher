@@ -15,5 +15,10 @@
         [movie]="movie"
       ></app-movie-card>
     </div>
+    <app-pagination
+      [currentPage]="currentPage"
+      [totalPages]="totalPages"
+      (pageChange)="onPageChange($event)"
+    ></app-pagination>
   </main>
 </div>

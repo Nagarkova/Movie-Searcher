@@ -1,10 +1,11 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-search-bar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   template: `
     <form (submit)="onSubmit($event)">
       <input type="text" [(ngModel)]="searchValue" name="search" placeholder="Search movies..." />
