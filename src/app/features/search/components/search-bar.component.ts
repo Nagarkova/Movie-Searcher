@@ -7,11 +7,12 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule],
   template: `
-    <form (submit)="onSubmit($event)">
+    <form class="search-bar-form" (submit)="onSubmit($event)">
       <input type="text" [(ngModel)]="searchValue" name="search" placeholder="Search movies..." />
       <button type="submit">Search</button>
     </form>
   `,
+  styleUrls: ['./search-bar.component.css'],
 })
 export class SearchBarComponent {
   searchValue = '';

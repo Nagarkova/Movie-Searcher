@@ -1,0 +1,13 @@
+<div class="movie-card" tabindex="0">
+  <div class="poster">
+    <img *ngIf="movie.Poster; else noPoster" [src]="movie.Poster" [alt]="movie.Title" />
+    <ng-template #noPoster>
+      <div class="no-poster">No image</div>
+    </ng-template>
+  </div>
+  <div class="movie-info">
+    <h3>{{ movie.Title }}</h3>
+    <p>{{ movie.Year }} • {{ movie.Runtime }}</p>
+    <app-rating-pie *ngIf="movie.VoteAverage !== undefined" [value]="movie.VoteAverage"></app-rating-pie>
+  </div>
+</div>

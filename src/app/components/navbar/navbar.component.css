@@ -3,24 +3,27 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 2rem;
-  background-color: var(--tui-base-02);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: var(--tui-text-01);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3498db;
+  letter-spacing: 1px;
 }
 
 .search {
   flex: 1;
-  max-width: 400px;
-  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar-form {
+  min-width: 400px;
 }
 
 .user {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  margin-left: 1.5rem;
 }

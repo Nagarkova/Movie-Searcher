@@ -4,12 +4,7 @@
   </div>
 
   <div class="search">
-    <tui-textfield>
-      <input
-        tuiTextfield
-        [(ngModel)]="value"
-      />
-    </tui-textfield>
+    <app-search-bar (search)="onSearch($event)"></app-search-bar>
   </div>
 
   <div class="user">
